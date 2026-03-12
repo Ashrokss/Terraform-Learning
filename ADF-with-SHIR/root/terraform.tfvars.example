@@ -1,0 +1,28 @@
+subscription_id     = ""
+resource_group_name = ""
+location            = ""
+environment         = ""
+
+costcentre = ""
+workload   = ""
+
+adf_shared = {
+  name        = ""
+  shir_name   = ""
+  description = ""
+}
+
+# VM automation: installs & registers SHIR node. Set to null to use on-prem/manual registration.
+shir_vm = {
+  vm_admin_password      = ""  # Use TF_VAR_shir_vm for secrets
+  storage_account_prefix = ""
+  vm_size                = ""
+}
+
+adf_linked = {
+  name           = ""
+  linked_ir_name = ""
+  description    = ""
+}
+
+# adf_linked = null
